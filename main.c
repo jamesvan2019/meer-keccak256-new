@@ -348,5 +348,14 @@ int main(int argc, const char * argv[])
     }
     printf("\n");
 
+	char s_new[117] = "helloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhelloworldhellowr";
+	uint8_t  hash32_new[32];
+	pmeer_v2_keccakhash(hash32_new,s_new);
+	printf("\ninput 117 bytes header:%s\nmeer_keccakhash result:",s);
+	for(int j=0;j<32;j++)
+    {
+    	printf("%02x",hash32_new[j]);
+    }
+    printf("\n");
 	return 0;
 }
