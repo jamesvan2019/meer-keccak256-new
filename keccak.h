@@ -7,6 +7,7 @@ extern "C"{
 #endif
 
 void keccakhash(void* state, const void* input);
+void pmeer_v2_keccakhash(void *state, const void *input);
 
 #ifdef __cplusplus
 }
